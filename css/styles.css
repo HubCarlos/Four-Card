@@ -135,3 +135,13 @@ body {
         margin-left: 14rem;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .title {
+        line-height: 30px;
+    }
+
+    .calculator {
+        margin-left: 0.4rem;
+    }
+}
