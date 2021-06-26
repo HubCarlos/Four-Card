@@ -145,3 +145,36 @@ body {
         margin-left: 0.4rem;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .title, .subtitle, .paragraph {
+        text-align: center;
+    }
+
+    .calculator {
+        margin-top: 1.5rem;
+        margin-left: 2.5rem;
+    }
+
+    .karma {
+        margin-top: 1.5rem;
+    }
+
+    .supervisor {
+        margin-top: 2rem;
+        margin-left: 2.3rem;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .calculator, .supervisor {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .calculator, .supervisor {
+        margin-left: 12px;
+    }
+}
