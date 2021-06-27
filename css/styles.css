@@ -5,172 +5,220 @@ body {
     background-color: hsl(0, 0%, 98%);
 }
 
+/* Main header */
 .title, .subtitle, .paragraph {
     text-align: center;
 }
 
+/* Main title */
 .title {
-    margin-top: 75px;
+    margin-top: 50px;
+    font-size: 20px;
     font-weight: 200;
-    line-height: 0px;
+    line-height: 1px;
 }
 
+/* Main subtitle */
 .subtitle {
-    color: hsl(234, 12%, 34%);
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: hsl(234, 12%, 34%)
 }
 
-.builder, .calculator, .karma, .supervisor {
+/* Main paragraph */
+.paragraph {
+    color: hsl(229, 6%, 66%);
+}
+
+/* Card Supervisor */
+.supervisor {
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    border-top: hsl(180, 62%, 55%) 5px solid;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+/* Card Builder */
+.builder {
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    border-top: hsl(0, 78%, 62%) 5px solid;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/* Card Karma */
+.karma {
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    border-top: hsl(34, 97%, 64%) 5px solid;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/* Card Calculator */
+.calculator {
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    border-top: hsl(212, 86%, 64%) 5px solid;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/* Cards Titles */
+.supervisor__title, .builder__title, .karma__title, .calculator__title {
+    font-size: 16px;
+    padding-top: 1vh;
+    padding-left: 2vh;
+    color: hsl(234, 12%, 34%)
+}
+
+/* Cards Paragraphs */
+.supervisor__paragraph, .builder__paragraph, .karma__paragraph, .calculator__paragraph {
+    font-size: 15px;
+    padding-left: 2vh;
+    color: hsl(229, 6%, 66%);
+}
+
+/* Cards Imgs */
+.supervisor__img, .builder__img, .karma__img, .calculator__img {
+    margin-top: 3vh;
+    margin-left: 23vh;
+}
+
+/* Shadows */
+.supervisor, .builder, .karma, .calculator {
     box-shadow: 0px 7px 7px 7px rgba(167, 180, 182, 0.521);
 }
 
-.builder {
-    margin-top: 4rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 350px;
-    height: 250px;
-    border-radius: 5px;
-    border-top: hsl(0, 78%, 62%) 5px solid;
-    background-color: #fff;
-}
+@media (min-width: 768px) and (max-width: 769px) {
+    .builder {
+        margin-top: -29vh;
+    }
+    
+    .supervisor {
+        position: relative;
+        top: 32vh;
+        margin-left: 10vh;
+    }
 
-.calculator {
-    margin-top: -5rem;
-    margin-left: auto;
-    margin-right: 25rem;
-    width: 350px;
-    height: 250px;
-    border-radius: 5px;
-    border-top: hsl(212, 86%, 64%) 5px solid;
-    background-color: #fff;
-}
-
-.karma {
-    width: 350px;
-    height: 250px;
-    border-radius: 5px;
-    border-top: hsl(34, 97%, 64%) 5px solid;
-    background-color: #fff;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -6rem;
-}
-
-.supervisor {
-    width: 350px;
-    height: 250px;
-    border-radius: 5px;
-    border-top: hsl(180, 62%, 55%) 5px solid;
-    background-color: #fff;
-    margin-left: 25rem;
-    margin-top: -25rem;
-}
-
-.builder__t, .calculator__t, .karma__t, .supervisor__t {
-    color: hsl(234, 12%, 34%);
-    font-weight: 600;
-    font-size: 15px;
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
-}
-
-.paragraph, .builder__p, .calculator__p, .karma__p, .supervisor__p {
-    color: hsl(229, 6%, 66%);
-    font-weight: 200;
-}
-
-.builder__p, .calculator__p, .karma__p, .supervisor__p {
-    font-size: 15px;
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
-}
-
-.builder__img, .calculator__img, .karma__img, .supervisor__img {
-    width: 65px;
-    height: 65px;
-    margin-top: 2.5rem;
-    margin-left: 15rem;
-}
-
-@media screen and (max-width: 375px) {
     .calculator {
-        margin-left: 0.9rem;
-        margin-top: 1rem;
+        position: relative;
+        left: 19vh;
+        bottom: 29.9vh;
     }
 
     .karma {
-        margin-top: 1.5rem;
+        position: relative;
+        top: 34vh;
     }
+}
 
+@media (min-width: 1024px) and (max-width: 1025px) {
     .supervisor {
-        margin-top: 1.5rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .title {
-        line-height: 30px;
+        position: relative;
+        top: 20vh;
+        right: 38vh;
     }
 
-    .builder, .calculator, .karma, .supervisor {
-        width: 300px;
-        height: 250px;
-    }
-
-    .calculator {
-        margin-left: 0.5rem;
-    }
-
-    .supervisor {
-        margin-bottom: 5px;
-    }
-
-    .builder__img, .calculator__img, .karma__img, .supervisor__img {
-        width: 65px;
-        height: 65px;
-        margin-top: 1rem;
-        margin-left: 14rem;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .title {
-        line-height: 30px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .title, .subtitle, .paragraph {
-        text-align: center;
-    }
-
-    .calculator {
-        margin-top: 1.5rem;
-        margin-left: 2.5rem;
+    .builder {
+        position: relative;
+        bottom: 30vh;
     }
 
     .karma {
-        margin-top: 1.5rem;
+        position: relative;
+        bottom: 30vh;
     }
 
+    .calculator {
+        position: relative;
+        left: 38vh;
+        bottom: 73vh;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1201px) {
     .supervisor {
-        margin-top: 2rem;
-        margin-left: 2.3rem;
-        margin-bottom: 5px;
+        position: relative;
+        top: 20vh;
+        right: 38vh;
+    }
+
+    .builder {
+        position: relative;
+        bottom: 30vh;
+    }
+
+    .karma {
+        position: relative;
+        bottom: 30vh;
+    }
+
+    .calculator {
+        position: relative;
+        left: 38vh;
+        bottom: 73vh;
     }
 }
 
-@media screen and (max-width: 320px) {
-    .calculator, .supervisor {
-        margin-left: 10px;
+@media (min-width: 1400px) and (max-width: 1441px) {
+    .supervisor {
+        position: relative;
+        top: 15vh;
+        right: 35vh;
+    }
+
+    .builder {
+        position: relative;
+        bottom: 30vh;
+    }
+
+    .karma {
+        position: relative;
+        bottom: 30vh;
+    }
+
+    .calculator {
+        position: relative;
+        left: 35vh;
+        bottom: 69vh;
     }
 }
 
-@media screen and (max-width: 375px) {
-    .calculator, .supervisor {
-        margin-left: 12px;
+@media (min-width: 1920px) and (max-width: 1921px) {
+    .supervisor {
+        position: relative;
+        top: 15vh;
+        right: 35vh;
+    }
+
+    .builder {
+        position: relative;
+        bottom: 30vh;
+    }
+
+    .karma {
+        position: relative;
+        bottom: 28vh;
+    }
+
+    .calculator {
+        position: relative;
+        left: 35vh;
+        bottom: 69vh;
     }
 }
