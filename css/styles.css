@@ -175,7 +175,31 @@ body {
     }
 }
 
-@media (min-width: 1400px) and (max-width: 1441px) {
+@media (min-width: 1279px) and (max-width: 1281px) {
+    .supervisor {
+        position: relative;
+        top: 13vh;
+        right: 35vh;
+    }
+
+    .builder {
+        position: relative;
+        bottom: 30vh;
+    }
+
+    .karma {
+        position: relative;
+        bottom: 30vh;
+    }
+
+    .calculator {
+        position: relative;
+        left: 35vh;
+        bottom: 73vh;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1504px) {
     .supervisor {
         position: relative;
         top: 15vh;
